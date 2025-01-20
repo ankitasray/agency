@@ -32,7 +32,7 @@ xl:w-4/5
     >
       <Link href="/">
       <Image
-        src="/logo/logo.webp"
+        src="/logo/softoralogo.png"
         alt="Bird Logo"
         width={1000}
         height={1000}
