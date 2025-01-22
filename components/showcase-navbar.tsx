@@ -29,11 +29,10 @@ const ShowcaseNavbar = () => {
           src="/logo/softoralogo.png"
           alt="Softoralogo"
           width={150} // Adjusted width for better prominence
-          height={150} // Adjusted height to maintain proportions
-          className="w-28 md:w-36 lg:w-40 transition duration-300 ease-in-out transform hover:scale-105 
-            border-4 border-transparent hover:border-gray-100 rounded-full 
-            shadow-xl hover:shadow-2xl
-            hover:border-4 hover:border-solid hover:border-gray-200"
+                    height={300} // Adjusted height to maintain proportions
+                    className="w-28 md:w-36 lg:w-40 transition duration-300 ease-in-out transform hover:scale-105 
+                      border-4 border-transparent 
+                      hover:border-4 hover:border-solid hover:border-white"
         />
       </Link>
 
@@ -47,11 +46,7 @@ const ShowcaseNavbar = () => {
       </div>
 
       <div className="flex items-center gap-x-4">
-        <a href="tel:5193191562" className="hidden xl:flex">
-          <button className="px-4 py-2 rounded-md flex items-center gap-x-3">
-            (519)-319-1562
-          </button>
-        </a>
+        
 
         <Link
           href={"/meeting"}
