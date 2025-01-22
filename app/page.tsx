@@ -378,8 +378,8 @@ export default function Home() {
             </div>
 
             <span className="text-xl font-medium">
-              Jordan, Brisson <br />
-              CEO, Atlas Massage
+              Prajwal, Bangalore <br />
+              CEO, MyMane
             </span>
           </div>
         </main>
