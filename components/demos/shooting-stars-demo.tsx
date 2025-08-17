@@ -23,26 +23,26 @@ const features = [
   },
   {
     icon: "/icons/team.svg",
-    title: "Team of Experts",
+    title: "Expert AI Team",
     description: "A team of experts ready to help you, at all times.",
   },
-  {
-    icon: "/icons/safe.svg",
-    title: "Secure Building",
-    description:
-      "Safe and secure building practices. To ensure your data is safe.",
-  },
-  {
-    icon: "/icons/analytics.svg",
-    title: "Analytics Tracking",
-    description: "Track your progress with our built in analytics",
-  },
+  // {
+  //   icon: "/icons/safe.svg",
+  //   title: "Secure Building",
+  //   description:
+  //     "Safe and secure building practices. To ensure your data is safe.",
+  // },
+  // {
+  //   icon: "/icons/analytics.svg",
+  //   title: "Analytics Tracking",
+  //   description: "Track your progress with our built in analytics",
+  // },
 
-  {
-    icon: "/icons/flexible.svg",
-    title: "Dynamic Websites",
-    description: "We build dynamic solutions that are easy to manage.",
-  },
+  // {
+  //   icon: "/icons/flexible.svg",
+  //   title: "Dynamic Websites",
+  //   description: "We build dynamic solutions that are easy to manage.",
+  // },
   {
     icon: "/icons/support.svg",
     title: "24/7 Support",
