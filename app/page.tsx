@@ -16,123 +16,48 @@ import { Link as ScrollLink, Element } from "react-scroll";
 import { IconStarFilled } from "@tabler/icons-react";
 import { ShootingStarsAndStarsBackgroundDemo } from "@/components/demos/shooting-stars-demo";
 import LetsMakeThingsHappenSection from "@/components/ui/lets-make-things-happen";
-import ServiceModal from "@/components/ServiceModal";
-import { useState } from "react";
 
 
 const services = [
   {
-    icon: "/images/user-engagement.png",
-    title: "AI Sales & Lead Generation Bots",
-    slug: "ai-sales-lead-generation",
-    subscriptionStartingFrom: "₹1499/month",
-    description: [
-      "Engages website/social media visitors instantly",
-      "Qualifies leads and books meetings automatically",
-      "Never miss a lead, even outside business hours",
-    ],
-  },
-  {
-    icon: "/images/help-desk.png",
-    title: "Customer Support Agent (24/7)",
-    slug: "customer-support-agent",
-    subscriptionStartingFrom: "₹1999/month",
-    description: [
-      "Provides round-the-clock automated customer service",
-      "Handles customer queries instantly without human intervention",
-      "Reduces the need for full-time support staff",
-    ],
-  },
-  {
-    icon: "/images/iteration.png",
-    title: "Internal Workflow Assistants",
-    slug: "internal-workflow-assistants",
-    subscriptionStartingFrom: "₹1299/month",
-    description: [
-      "Helps employees with onboarding, internal FAQs, and process guidance",
-      "Streamlines internal communication and improves team productivity",
-    ],
-  },
-  {
-    icon: "/images/ai.png",
-    title: "AI Knowledge Base Agents",
-    slug: "ai-knowledge-base-agents",
-    subscriptionStartingFrom: "₹1799/month",
-    description: [
-      "Trained on your company’s documents and policies",
-      "Instantly answers customer and employee questions accurately",
-      "Ideal for customer support, HR, and internal knowledge sharing",
-    ],
-  },
-  {
-    icon: "/images/healthcare.png",
-    title: "Health Assistance & Product Recommendation",
-    slug: "health-assistance-product-recommendation",
-    subscriptionStartingFrom: "₹1599/month",
-    description: [
-      "Useful for wellness and healthcare brands",
-      "Understands customer health-related queries",
-      "Recommends the most suitable products or supplements based on needs",
-    ],
-  },
-  {
-    icon: "/images/bot.png",
-    title: "Custom AI Agents",
-    slug: "custom-ai-agents",
-    subscriptionStartingFrom: "₹2499/month",
-    description: [
-      "We build AI agents tailored to your business needs",
-      "Custom workflows, tone, and logic designed to match your brand",
-      "Suitable for any industry or use case",
-    ],
-  },
-  {
-    icon: "/images/voice-assistant.png",
-    title: "Voice Assistant Development",
-    slug: "voice-assistant-development",
-    subscriptionStartingFrom: "₹1899/month",
+    icon: "/images/s_6.png",
+    title: "Web Design + Development",
     description:
-      "Create Alexa/Google voice apps to serve customers with hands-free, interactive experiences.",
+      "Take your business to the next level with our web design and development services",
   },
   {
-    icon: "/images/schedule.png",
-    title: "AI Appointment Scheduling Assistants",
-    slug: "ai-appointment-scheduling-assistants",
-    subscriptionStartingFrom: "₹1399/month",
-    description: [
-      "Books appointments and meetings intelligently",
-      "Syncs with calendars to avoid double bookings",
-      "Sends reminders and updates in real-time",
-    ],
+    icon: "/images/s_1.png",
+    title: "Search Engine Optimization",
+    description:
+      "Get your website to the top of search engine results with our SEO services",
   },
   {
-    icon: "/images/rating.png",
-    title: "AI Feedback & Review Collection Bots",
-    slug: "ai-feedback-review-collection-bots",
-    subscriptionStartingFrom: "₹1199/month",
-    description: [
-      "Follows up with customers to gather feedback automatically",
-      "Encourages satisfied customers to leave positive reviews",
-      "Improves brand credibility and trust",
-    ],
+    icon: "/images/s_5.png",
+    title: "Content Creation",
+    description:
+      "Boost your brand's online presence with our social media marketing services",
+  },
+  {
+    icon: "/images/s_3.png",
+    title: "Social Media Marketing",
+    description:
+      "Interact with your customers and increase sales with our email marketing services",
+  },
+  {
+    icon: "/images/s_4.png",
+    title: "Email Marketing",
+    description:
+      "With our content creation services, we help businesses drive results",
+  },
+  {
+    icon: "/images/s_2.png",
+    title: "Pay-Per-Click Advertising",
+    description:
+      "Don't waste money on ineffective advertising. Our PPC services help you reach your target audience",
   },
 ];
 
-
-
-
 export default function Home() {
- const [selectedService, setSelectedService] =useState<any>(null);
-
-  const handleOpenModal = (service:any) => {
-    console.log(service)
-    setSelectedService(service);
-  };
-
-  const handleCloseModal = () => {
-    setSelectedService(null);
-  };
-  
   return (
     <div
       className="overflow-clip 
@@ -349,53 +274,35 @@ export default function Home() {
         </div>
       </main>
 
-     <Element name="services">
-  <div className="md:px-0 mx-6 xl:w-4/5 2xl:w-[68%] md:mx-auto">
-    <h1>
-      <WordPullUpDemo />
-    </h1>
-    <p className="md:text-center py-4 md:w-1/2 mx-auto text-xl md:text-2xl text-gray-500">
-      All of our services are designed to help your business stand out
-    </p>
+      <Element name="services">
+        <div className="md:px-0 mx-6 xl:w-4/5 2xl:w-[68%] md:mx-auto ">
+        <h1>
+          <WordPullUpDemo />
+        </h1>
+        <p className="md:text-center py-4 md:w-1/2 mx-auto text-xl md:text-2xl text-gray-500">
+        All of our services are designed to help your business stand out 
+        </p>
 
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
-      {services.map((service) => (
-        <div
-          key={service.title}
-          onClick={() => handleOpenModal(service)} // 👈 Open modal
-          className="flex flex-col justify-between h-full space-y-4 text-center bg-gray-100 p-4 cursor-pointer hover:scale-105 transition-transform rounded-md"
-        >
-          <Image
-  src={service.icon}
-  width={80}       // ✅ small fixed size
-  height={80}
-  className="object-contain mx-auto bg-gray-100 p-2 w-20 h-20 rounded-md"
-  alt="image"
-/>
-
-          <h1 className="text-xl font-medium">{service.title}</h1>
-          {/* <p className="text-gray-500">{service.description}</p> */}
-
-          {service.subscriptionStartingFrom && (
-            <p className="text-green-600 font-semibold">
-              Subscription Starting from {service.subscriptionStartingFrom}
-            </p>
-          )}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
+            {services.map((service) => (
+              <div
+                key={service.title}
+                className="flex flex-col justify-between h-full space-y-4 text-center bg-gray-100 p-4 cursor-pointer hover:scale-105 transition-transform rounded-md"
+              >
+                <Image
+                  src={service.icon}
+                  width={10000}
+                  height={10000}
+                  className="object-contain bg-gray-100 p-4 w-full h-40 rounded-md"
+                  alt="image"
+                />
+                <h1 className="text-xl font-medium">{service.title}</h1>
+                <p className="text-gray-500">{service.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
-      ))}
-    </div>
-  </div>
-
-  {/* 👇 Render Modal */}
-   {selectedService && (
-  <ServiceModal
-    service={selectedService}
-    onClose={() => setSelectedService(null)}
-  />
-)}
-</Element>
-
-
+      </Element>
 
       <section className="py-20">
         <ScrollBasedVelocityDemo />
