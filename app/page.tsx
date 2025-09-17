@@ -172,7 +172,7 @@ export default function Home() {
             >
               Services
             </ScrollLink>
-            
+
             <ScrollLink
               to="process"
               smooth={true}
