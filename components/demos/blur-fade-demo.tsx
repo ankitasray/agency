@@ -55,12 +55,6 @@ export function BlurFadeDemo() {
                 alt={`Random stock image ${idx + 1}`}
               />
               <h3 className="text-lg font-semibold p-4">{title}</h3>
-{/* <div className="absolute inset-0 bg-black/20 backdrop-blur-sm flex items-center justify-center ">
-              <p className="text-white text-xl font-bold">
-                First Try, Then Believe
-              </p>
-            </div> */}
-              
             </Link>
           </BlurFade>
         ))}

@@ -44,9 +44,9 @@ export default function ServiceModal({ service, onClose }: ServiceModalProps) {
         </h2>
 
         {/* Description List */}
-        <ul className="text-gray-700 dark:text-gray-300 mb-4 list-none list-inside space-y-2 text-center">
+        <ul className="text-gray-700 dark:text-gray-300 mb-4 list-disc list-inside space-y-2">
           {service.description.map((point, index) => (
-            <li className="text-align-center" key={index}>{point}</li>
+            <li key={index}>{point}</li>
           ))}
         </ul>
 

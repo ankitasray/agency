@@ -363,7 +363,7 @@ export default function Home() {
         <div
           key={service.title}
           onClick={() => handleOpenModal(service)} // 👈 Open modal
-          className="flex flex-col justify-between h-full space-y-4 text-center bg-gray-100 p-10 cursor-pointer hover:scale-105 transition-transform rounded-md"
+          className="flex flex-col justify-between h-full space-y-4 text-center bg-gray-100 p-4 cursor-pointer hover:scale-105 transition-transform rounded-md"
         >
           <Image
   src={service.icon}
@@ -376,11 +376,11 @@ export default function Home() {
           <h1 className="text-xl font-medium">{service.title}</h1>
           {/* <p className="text-gray-500">{service.description}</p> */}
 
-          {/* {service.subscriptionStartingFrom && (
+          {service.subscriptionStartingFrom && (
             <p className="text-green-600 font-semibold">
               Subscription Starting from {service.subscriptionStartingFrom}
             </p>
-          )} */}
+          )}
         </div>
       ))}
     </div>
