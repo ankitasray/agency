@@ -91,8 +91,8 @@ const services = [
     title: "Voice Assistant Development",
     slug: "voice-assistant-development",
     subscriptionStartingFrom: "₹1899/month",
-    description:[
-      "Create Alexa/Google voice apps to serve customers with hands-free, interactive experiences."],
+    description:
+      "Create Alexa/Google voice apps to serve customers with hands-free, interactive experiences.",
   },
   {
     icon: "/images/schedule.png",
